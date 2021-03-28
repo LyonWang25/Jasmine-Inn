@@ -1,0 +1,220 @@
+
+body{
+  background-color: #FFFCF9;
+}
+.covid{
+  background-color: #000;
+  top:0;
+  bottom:0;
+  left: 0
+  right: 0;
+}
+.covid-text{
+  color: #FFF;
+  text-align: center;
+  margin: 0 ;
+}
+
+
+
+.container-fluid{
+  padding: 0 10%;
+  background: transparent !important;
+}
+
+
+
+/*navbar section*/
+.nav-item {
+  padding: 0 18px;
+}
+
+.navbar-light .navbar-brand{
+  color: #fff;
+  font-size: 50px;
+  font-family: park-lane, serif;
+  font-weight: 300;
+  font-style: normal;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: #fff;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-family: roboto, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.carousel-caption{
+  position:absolute;
+  top:30%;
+}
+
+
+/*slide section*/
+.left,.right{
+  z-index: 1 !important;
+}
+.my-carousel{
+ margin-top: -101px;
+ z-index: -1;
+}
+.carousel-indicators li {
+  height: 15px;
+    width: 15px;
+    border-radius: 50%;
+}
+.carousel-item:after {
+  content:"";
+  display:block;
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background:rgba(0,0,0,0.2);
+}
+.first-slide, .second-slide, .third-slide{
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center center;
+   }
+
+/*Room-style-section*/
+.room-style{
+  background-color: #FFE9D2;
+  width:100%;
+}
+
+.room-list-box{
+      margin: 0 auto;
+      padding: 1.3em;
+      border-top: solid 1px rgba(255,255,255,0.1);
+      border-bottom: solid 1px rgba(255,255,255,0.1);
+}
+.room-list-box,.room-list-menu{
+    text-align: center;
+    padding:20px 0;
+}
+.room-list-box .room-list-menu a{
+  display: inline-block;
+    color: #000;
+    padding: 0 1em;
+    margin-bottom: 1em;
+}
+
+/*Room-list-picture section*/
+.white-section{
+  margin-bottom: 100px;
+}
+.room-box{
+  max-width:100%;
+  padding-top: 3.5rem;
+
+}
+ h4, h6, .share{
+  display: inline;
+}
+h4{
+  color:#FF6F00;
+  font-family: roboto, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+h6{
+  padding-left: 1rem;
+  font-family: arial;
+}
+hr{
+  margin-top: 0;
+  width: 80%;
+  float: left;
+}
+.share{
+  float: right;
+  bottom: 0;
+}
+.melody{
+  -webkit-filter: drop-shadow(5px 10px 11px rgba(0,0,0,0.2));
+}
+.room-box a:hover img{
+  opacity:0.7;
+}
+/*footer left-section*/
+.footer-left h3{
+  color:#C93500;
+  font-family: park-lane, serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 30px;
+}
+.footer-section{
+  padding: 3% 10%;
+  max-width: 100%;
+  background-color: #FFEDE4
+}
+.phone-box {
+  display: -webkit-inline-box;
+  top:0;
+  bottom: 0;
+  height: 25px;
+}
+.phone-box i{
+  padding-bottom: -5px;
+  padding-right: 10px;
+}
+.phone-1{
+  width: 200px;
+  height:20px;
+  padding-left: 10px;
+}
+.phone-2 {
+  padding-left: 26px;
+}
+
+.mail-icon{
+  width:300px;
+  display: -webkit-inline-box;
+}
+.mail-icon p{
+  margin-left: 10px;
+}
+.address-box{
+  display: -webkit-inline-box;
+}
+.address-text{
+  padding-left: 14px;
+  width: 200px;
+}
+.facebook{
+  width: 5vh!important;
+  color: #1877F2;
+  padding-left: 5%;
+  font-size: 2rem
+}
+.wechat{
+  width: 5vh!important;
+  color: #02E36F;
+  padding-left: 5%;
+  font-size: 2rem;
+}
+.line{
+  width: 5vh!important;
+  color: #00B900;
+  padding-left: 5%;
+  font-size: 2rem
+
+}
+/*footer right box*/
+.footer-right{
+  margin-top: 35px;
+
+}
+.connect-box{
+  display: -webkit-inline-box;
+}
+.wifi-box{
+  display: -webkit-inline-box;
+}
+.car-icon {
+  padding-left: 10%;
+}

@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jasmine</title>
+  <!-- Adobe Fonts-->
+  <link rel="stylesheet" href="https://use.typekit.net/pta5ntn.css">
+  <!-- Google Fonts -->
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Font Awesome -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+
+</head>
+
+
+<body>
+
+
+  <section class="TopContainer" id="banner">
+    <div class=covid>
+      <p class="covid-text">Covid-19 Update</p>
+      </div>
+
+    <div class="container-fluid">
+      <!-- Nav Bar -->
+      <nav class="navbar navbar-expand-md navbar-light">
+
+        <a class="navbar-brand" href="index.html">Jasmine Inn</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbar1">
+
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">SERVICE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="rooms.html">ROOMS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">EVENTS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">ATTRACTIONS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">CONTACT</a>
+            </li>
+            <button type="button" class="btn btn1 btn-sm btn-dark">Reservation <i class="fas fa-calendar-alt" style="display: inline;"></i></button>
+          </ul>
+        </div>
+      </nav>
+
+      <!--Title-->
+
+      <div class="row">
+        <div class="big-heading col-lg-6">
+          <h1 class="big-heading">Travel Is Not To Go To Another Place.Travel Is Another Way Of Experiencing.</h1>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--About Section-->
+  <section class="comfort">
+    <!--<div class="line"> //not working
+        <hr style="right: 10%; transform: rotate3d(0, 0, 1, 170deg); height: 300%;" >
+    </div>
+  -->
+    <div class="comfort__content">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="mx-15 ml-md-30 ml-lg-90 ml-xl-150">
+            <h2 class="comfort-title">
+              <div>About </div>
+              <div>Jasmine Inn</div>
+            </h2>
+            <!--<div class="comfort-box-mob" style="display: none;">
+            <div class="comfort-background-mask">
+              <div class="comfort-background-mask__body" style="visibility: hidden; width: 1%; opacity: 0;"></div>
+            </div>
+            <div class="comfort-canvas">
+              <div class="lazy-container">
+                <div class="base-loader base-loader-bg">
+                  <div class="base-loader-parts-wrapper base-loader-parts-wrapper_background">
+                    <div class="base-loader-parts base-loader-parts_background"></div>
+                  </div>
+                  <div class="base-loader-parts-wrapper base-loader-parts-wrapper_first">
+                    <div class="base-loader-parts base-loader-parts_first"></div>
+                  </div>
+                </div>
+                <div class="lazy-container__bg"></div> <img alt="img" class="lazy-container__img">
+              </div>
+            </div>
+          </div>
+        -->
+            <p class="comfort__description">Jasmine Inn located in the south of Taiwan.
+              We have the most beautiful coastline and the
+              world class sunset point which recommended
+              by CNN News channel. </p>
+            <div class="btnSpace">
+              <a class="btn btn-exploreHotel btn-lg btn-warning" href="#" role="button">EXPLORE HOTEL</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 comfort-box">
+          <div class="comfort-background-mask">
+            <div class="comfort-background-mask__body"></div>
+          </div>
+          <div class="comfort-canvas">
+            <div class="lazy-container">
+              <div class="lazy-container__bg"></div>
+              <img alt="img" class=" img-fluid lazy-container__img" src="https://t41589.neocities.org/images/IMG_4404_%E7%BB%93%E6%9E%9C.jpg">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="slider-stay">
+    <div class="row">
+      <div class="col-md-6">
+        <!--<h2 class="slider-stay-content__title mx-15" style="display: none;">Stay </h2>
+      <p class="slider-stay-content__description mx-15" style="display: none;">Contemporary elegance with an urban outlook</p>
+    -->
+
+        <div id="carouselExampleFade" class="slider-stay-img carousel slide carousel-fade" data-interval="5000" data-pause='hover' data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="https://t41589.neocities.org/images/IMG_4243_%E7%BB%93%E6%9E%9C.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="https://t41589.neocities.org/images/roomPicture/IMG_4273_%E7%BB%93%E6%9E%9C.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="https://t41589.neocities.org/images/IMG_3277.JPG" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+
+
+        <div class="slider-stay-data">
+          <h2 class="slider-stay-content__title mx-15" style="display: none;">Stay </h2>
+          <p class="slider-stay-content__description mx-15" style="display: none;">Contemporary elegance with an urban outlook</p>
+          <div class="slider-stay-data__bg" style=""></div>
+          <div class="slider-big-content">
+            <h3 class="slider-stay-data__title">Deluxe Suite Double </h3>
+            <p class="slider-stay-data__description">A cozy well-designed room that takes you away from the urban hustle and provides you with the comfort and peace for a relaxing stay. </p>
+            <div class="btnStay">
+              <a class="btn btn-exploreHotel btn-lg btn-warning" href="#" role="button">BOOK NOW</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="slider-stay-content">
+          <h1 class="slider-stay-content-title">Stay</h1>
+          <p class="slider-stay-content-description">
+            Stay at here. Enjoy the best rooms and the best breakfast.
+          </p>
+        </div>
+      </div>
+  </section>
+
+  <section class="breakfast-service">
+    <div class="breakfast-service-background-box">
+      <div class="breakfast-service-background-box-box">
+      </div>
+    </div>
+    <div class="row mx-15 mx-md-30 mx-lg-150 mx-xl-150">
+      <div class="col-md-12">
+        <h2 class="breakfast-service-block-title" style="visibility: visible;">
+          <div style="display: block; text-align: left; position: relative; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">Breakfast</div>
+          <div style="display: block; text-align: left; position: relative; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">&amp; Service </div>
+        </h2>
+      </div>
+    </div>
+
+    <div class="row mx-lg-150">
+      <div class="col-md-6">
+        <div class="breakfast-service-block-box left-box">
+          <div class="breakfast-service-block-box-left-img">
+            <div class="lazy-container">
+              <!---->
+              <div class="lazy-container__bg"></div> <img alt="img" class="lazy-container__img" src="https://t41589.neocities.org/images/IMG_4074_%E7%BB%93%E6%9E%9C.jpg"
+                srcset="https://t41589.neocities.org/images/IMG_4074_%E7%BB%93%E6%9E%9C.jpg 480w, https://t41589.neocities.org/images/IMG_4074_%E7%BB%93%E6%9E%9C.jpg 768w, https://t41589.neocities.org/images/IMG_4074_%E7%BB%93%E6%9E%9C.jpg 1280w, https://t41589.neocities.org/images/IMG_4074_%E7%BB%93%E6%9E%9C.jpg 1920w">
+            </div>
+          </div>
+          <h3 class="breakfast-service-block-box__title" style="">
+            Homemade Chinese &amp; Western Breakfast
+          </h3>
+          <div>
+            <button type="button" class="btn btn-breakfast btn-lg btn-outline-dark">Read More</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="breakfast-service-block-box right-box">
+
+          <div class="breakfast-service-block-box-right-img">
+            <div class="lazy-container">
+              <!---->
+              <div class="lazy-container__bg"></div>
+              <img alt="img" class="lazy-container__img" src="https://t41589.neocities.org/images/istockphoto-1097136420-1024x1024.jpg"
+                srcset="https://t41589.neocities.org/images/istockphoto-1097136420-1024x1024.jpg 480w, https://t41589.neocities.org/images/istockphoto-1097136420-1024x1024.jpg 768w, https://t41589.neocities.org/images/istockphoto-1097136420-1024x1024.jpg 1280w, https://t41589.neocities.org/images/istockphoto-1097136420-1024x1024.jpg 1920w">
+            </div>
+          </div>
+          <h3 class="eat-drink-block-box__title" style="">
+            Water
+          </h3>
+          <button type="button" class="btn btn-breakfast btn-lg btn-outline-dark">Explore More</button>
+        </div>
+      </div>
+  </section>
+
+  <section class="attraction-section">
+    <div class="col-lg-12">
+
+      <img class="attraction-img img-fluid" src="https://t41589.neocities.org/images/c9e6b95475a5b4ebc1852023ad4c2116.jpg">
+
+    </div>
+    <div class="row">
+      <div class="col-md-12 col-sm-12 ">
+        <div class="attraction-title-box">
+          <h1 class="attraction-title">Attractions</h1>
+        </div>
+        <div class="attraction-description">
+          <p>Discover sights, attractions, shopping malls, high end nightlife,
+            as well as cultural and entertainment activities offered by
+            the neighborhood.
+          </p>
+        </div>
+        <div class="row justify-content-center">
+          <a class="btn btn-explorekenting btn-lg btn-warning" href="#" role="button">EXPLORE KENTING</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonial-section">
+    <div class="row">
+      <div class="col-md-6 testimonial-background">
+        <div class="testimonial-title-box">
+          <h1 class="testimonial-title-text">Love By Many</h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonial-container ">
+      <div class="row">
+        <div class="col-md-12">
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row">
+                  <div class="col-md-4 col-agoda ">
+                    <div class="single-box">
+
+                      <div class="img-text">
+                        <i class="fas fa-star star fa-lg"></i>
+                        <i class="fas fa-star star fa-lg"></i>
+                        <i class="fas fa-star star fa-lg"></i>
+                        <i class="fas fa-star star fa-lg"></i>
+                        <i class="fas fa-star star fa-lg"></i>
+                        <h2>Agoda</h2>
+                        <p>
+                          Certificate of Excellent
+                          Based on "500+" reviews.
+                          <a
+                            href="https://www.agoda.com/jasmine-inn/hotel/kenting-tw.html?finalPriceView=1&isShowMobileAppPrice=false&cid=-1&numberOfBedrooms=&familyMode=false&adults=1&children=0&rooms=1&maxRooms=0&checkIn=2021-03-14&isCalendarCallout=false&childAges=&numberOfGuest=0&missingChildAges=false&travellerType=0&showReviewSubmissionEntry=false&currencyCode=USD&isFreeOccSearch=false&tspTypes=16,-1&los=2&searchrequestid=da8415d4-6ae4-4663-af8d-7e451aebf26d">
+                            See More Here</a>
+                        </p>
+                        <div>
+                          <a href="https://www.agoda.com/jasmine-inn/hotel/kenting-tw.html?finalPriceView=1&isShowMobileAppPrice=false&cid=-1&numberOfBedrooms=&familyMode=false&adults=1&children=0&rooms=1&maxRooms=0&checkIn=2021-03-14&isCalendarCallout=false&childAges=&numberOfGuest=0&missingChildAges=false&travellerType=0&showReviewSubmissionEntry=false&currencyCode=USD&isFreeOccSearch=false&tspTypes=16,-1&los=2&searchrequestid=da8415d4-6ae4-4663-af8d-7e451aebf26d"
+                            target="_blank">
+                            <img class="image-fluid testimonial-logo" src="https://seekvectorlogo.com/wp-content/uploads/2018/01/agoda-vector-logo.png" /></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="single-box">
+
+                      <div class="img-text">
+                        <div>
+                          <i class="fas fa-star star fa-lg"></i>
+                          <i class="fas fa-star star fa-lg"></i>
+                          <i class="fas fa-star star fa-lg"></i>
+                          <i class="fas fa-star star fa-lg"></i>
+                          <i class="fas fa-star star fa-lg"></i>
+                        </div>
+                        <h2>Ez-Travel</h2>
+                        <p>
+                          The welcome here was warm,
+                          the view is amazing to see the
+                          famous landmark in Kenting.
+                          I love it so much.
+
+                          2020.01.15
+
+                        </p>
+                        <a href="https://hotel.eztravel.com.tw/detail-kenting-5589-914951/jasmine-inn/" target="_blank">
+                          <img class="image-fluid testimonial-logo-ez" src="https://t41589.neocities.org/images/Eztravel_Knowledge_graph_logo.png" /></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="single-box">
+
+                      <div class="img-text">
+                        <i class="fas fa-star star fa-lg"></i>
+                        <i class="fas fa-star star fa-lg"></i>
+                        <i class="fas fa-star star fa-lg"></i>
+                        <i class="fas fa-star star fa-lg"></i>
+                        <i class="fas fa-star-half star fa-lg"></i>
+                        <h2>Google Comment</h2>
+                        <p>
+                          感謝三姊熱情招待~房間乾淨又大，
+                          還招待我們水果，小孩都不小回家了
+                          下次還會再來!
+                          <a href="https://goo.gl/maps/vcH2R65XVvSaf2hDA">
+                            See More Here</a>
+                        </p>
+                        <a href="https://goo.gl/maps/vcH2R65XVvSaf2hDA" target="_blank">
+                          <img class="image-fluid testimonial-logo" src="https://t41589.neocities.org/images/providers-list.png" /></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="single-box">
+
+                      <div class="img-text">
+                        <i class="fas fa-star star fa-lg"></i>
+                        <i class="fas fa-star star fa-lg"></i>
+                        <i class="fas fa-star star fa-lg"></i>
+                        <i class="fas fa-star star fa-lg"></i>
+                        <i class="fas fa-star star fa-lg"></i>
+                        <h2>Booking.com</h2>
+                        <p>
+                          Beautiful superior room which was
+                          huge. Great breakfast. Short walk
+                          to the Kenting street.
+                          Would recommend !
+                          <a href="https://www.booking.com/hotel/tw/jasmin-inn.zh-tw.html">
+                            See More Here</a>
+                        </p>
+                        <a href="https://www.booking.com/hotel/tw/jasmin-inn.zh-tw.html" target="_blank">
+                          <img class="image-fluid testimonial-logo" src="https://t41589.neocities.org/images/bookingcom-1.png" /></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="single-box">
+
+                      <div class="img-text">
+                        <i class="fas fa-star star fa-lg"></i>
+                        <i class="fas fa-star star fa-lg"></i>
+                        <i class="fas fa-star star fa-lg"></i>
+                        <i class="fas fa-star star fa-lg"></i>
+                        <i class="fas fa-star star fa-lg"></i>
+                        <h2>Person five</h2>
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                          quis nostrud exercitation ullamco laboris nisi ut aliqui
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="single-box">
+
+                      <div class="img-text">
+                        <i class="fas fa-star star fa-lg"></i>
+                        <i class="fas fa-star star fa-lg"></i>
+                        <i class="fas fa-star star fa-lg"></i>
+                        <i class="fas fa-star star fa-lg"></i>
+                        <i class="fas fa-star star fa-lg"></i>
+                        <h2>Person six</h2>
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                          quis nostrud exercitation ullamco laboris nisi ut aliqui
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="container footer-section">
+   <div class="row">
+     <div class="footer-left col-md-6 col-lg-6 col-sm-6">
+       <h3>Jasmine Inn</h3>
+       <div class="phone-box">
+       <i class="fas fa-phone"></i>
+       <div class="phone-1">
+       <p>(+886)975-267-067</p>
+       </div>
+       <div class="mail-icon">
+         <i class="fas fa-envelope"></i>
+         <p>Jasmine100888@gmail.com</p>
+         </div>
+       </div>
+       <div class="phone-2">
+         <p>(+886)8-8856998</p>
+         </div>
+         <div class="address-box">
+         <i class="fas fa-map-marker-alt"></i>
+         <div class="address-text">
+           <p>No. 75-1, Heping Ln., Kending Rd.
+              Hengchun Township
+              Pingtung County
+              946, Taiwan (R.O.C.)
+            </p>
+           </div>
+         </div>
+     </div>
+
+     <div class="footer-right col-md-6 col-lg-6 col-sm-6">
+     <div class="connect-box">
+        <h3>Connect with us</h3>
+        <i class="fab fa-facebook facebook"></i>
+        <i class="fab fa-weixin wechat"></i>
+        <i class="fab fa-line line"></i>
+     </div>
+     <p class="hastag">#JasmineInn</p>
+     <div class="wifi-box">
+     <p><i class="fas fa-wifi fa-lg"></i> Free Wifi</p>
+     <div class="car-icon">
+       <p><i class="fas fa-car fa-lg"></i> Free Parking</p>
+       </div>
+
+     </div>
+     </div>
+   </div>
+</footer>
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="index.js" charset="utf-8"></script>
+</body>
+
+</html>

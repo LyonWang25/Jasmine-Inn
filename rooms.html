@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jasmine</title>
+  <!-- Adobe Fonts-->
+  <link rel="stylesheet" href="https://use.typekit.net/pta5ntn.css">
+  <!-- Google Fonts -->
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/rooms.css">
+  <!-- Font Awesome -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+   <section class="TopContainer" id="banner">
+     <div class=covid>
+       <p class="covid-text">Covid-19 Update</p>
+       </div>
+     <div class="container-fluid">
+       <!-- Nav Bar -->
+
+       <nav class="navbar navbar-expand-md navbar-light trn">
+
+         <a class="navbar-brand" href="index.html">Jasmine Inn</a>
+
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+         </button>
+
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+           <ul class="navbar-nav  ml-auto">
+             <li class="nav-item">
+               <a class="nav-link" href="about.html">ABOUT</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="#">SERVICE</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="rooms.html">ROOMS</a>
+             </li>
+              <li class="nav-item">
+              <a class="nav-link" href="#">EVENTS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">ATTRACTIONS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">CONTACT</a>
+            </li>
+            <button type="button" class="btn btn1 btn-sm btn-dark">Reservation <i class="fas fa-calendar-alt" style="display: inline;"></i></button>
+          </ul>
+        </div>
+      </nav>
+
+      </div>
+      </section>
+
+      <!--Carousel Wrapper-->
+
+      <div id="carousel-example-2" class="my-carousel carousel slide carousel-fade" data-ride="carousel">
+        <!--Indicators-->
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-example-2" data-slide-to="1"></li>
+          <li data-target="#carousel-example-2" data-slide-to="2"></li>
+        </ol>
+        <!--/.Indicators-->
+        <!--Slides-->
+        <div class="carousel-inner " role="listbox">
+          <div class="carousel-item active">
+            <div class="view">
+              <img class=" d-block w-100 first-slide" src="https://t41589.neocities.org/images/IMG_4209.JPG"
+                 alt="First slide">
+              <div class="mask rgba-black-light"></div>
+            </div>
+            <div class="carousel-caption">
+              <h1 class="h1-responsive">Classic Suit Double </h1>
+              <h3>5-Star Sleeping Experience At A 1-Star Price.</h3>
+            </div>
+          </div>
+
+           <div class="carousel-item ">
+             <!--Mask color-->
+             <div class="view">
+               <img class="d-block w-100 second-slide" src="https://t41589.neocities.org/images/IMG_4299.JPG"
+                 alt="Second slide">
+               <div class="mask rgba-black-strong"></div>
+             </div>
+             <div class="carousel-caption">
+               <h1 class="h1-responsive">Deluxe Suit Quad </h1>
+               <h3>5-Star Sleeping Experience At A 1-Star Price.</h3>
+             </div>
+           </div>
+
+           <div class="carousel-item ">
+             <!--Mask color-->
+             <div class="view">
+               <img class="d-block w-100 third-slide" src="https://t41589.neocities.org/images/IMG_4254.JPG"
+                 alt="Third slide">
+               <div class="mask rgba-black-slight"></div>
+             </div>
+             <div class="carousel-caption">
+               <h1 class="h1-responsive">Deluxe Suit Double </h1>
+               <h3>5-Star Sleeping Experience At A 1-Star Price.</h3>
+             </div>
+           </div>
+</div>
+
+           <!--/.Slides-->
+           <!--Controls-->
+           <a class="carousel-control-prev left" href="#carousel-example-2" role="button" data-slide="prev">
+             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+             <span class="sr-only">Previous</span>
+           </a>
+           <a class="carousel-control-next right" href="#carousel-example-2" role="button" data-slide="next">
+             <span class="carousel-control-next-icon" aria-hidden="true"></span>
+             <span class="sr-only">Next</span>
+           </a>
+           <!--/.Controls-->
+         </div>
+
+        <!--/.Carousel Wrapper-->
+           <section class="room-style">
+            <div class="container">
+              <div class="room-list-box">
+                <div class="room-list-menu">
+                   <a href="rooms.html">All</a>
+                   <a href="#">Melody</a>
+                    <a href="#">Charlotte</a>
+                   <a href="#">Galaxy</a>
+                   <a href="#">Alice</a>
+                   <a href="#">Green Elf</a>
+                    <a href="#">Others</a>
+              </div>
+             </div>
+              </div>
+
+              </section>
+    <section class="white-section" id="rooms">
+
+     <div class="container">
+
+       <div class="row">
+         <div class="room-box col-lg-4 col-md-4">
+          <div class="room-box-title">
+           <a href="roomdetail.html"><h4>Melody</h4></a>
+           <h6>Deluxe Suit Double</h6>
+           <i class="fas fa-share-alt share"></i>
+           </div>
+           <hr>
+           <a href="roomdetail.html"><img class="img-fluid melody" src="https://t41589.neocities.org/images/roomPicture/IMG_3273.JPG" alt="">
+            </a>
+         </div>
+
+         <div class="room-box col-lg-4 col-md-4">
+           <div class="room-box-title">
+            <a href="roomdetail.html"><h4>Charlotte</h4></a>
+            <h6>Deluxe Suit Double</h6>
+            <i class="fas fa-share-alt share"></i>
+            </div>
+            <hr>
+            <a href="roomdetail.html"><img class="img-fluid melody" src="https://t41589.neocities.org/images/roomPicture/IMG_4254_%E7%BB%93%E6%9E%9C.jpg" alt="">
+            </a>
+         </div>
+
+         <div class="room-box col-lg-4 col-md-4">
+           <div class="room-box-title">
+            <a href="roomdetail.html"><h4>Galaxy</h4></a>
+            <h6>Classic Suit Double </h6>
+            <i class="fas fa-share-alt share"></i>
+            </div>
+            <hr>
+            <a href="roomdetail.html"><img class="img-fluid melody" src="https://t41589.neocities.org/images/roomPicture/IMG_4143_%E7%BB%93%E6%9E%9C.jpg" alt="">
+            </a>
+         </div>
+         <div class="room-box col-lg-4 col-md-4">
+           <div class="room-box-title">
+            <a href="roomdetail.html"><h4>Alice</h4></a>
+            <h6>Classic Suit Triple </h6>
+            <i class="fas fa-share-alt share"></i>
+            </div>
+            <hr>
+            <a href="roomdetail.html"><img class="img-fluid melody" src="https://t41589.neocities.org/images/roomPicture/IMG_4404_%E7%BB%93%E6%9E%9C.jpg" alt="">
+            </a>
+         </div>
+         <div class="room-box col-lg-4 col-md-4">
+           <div class="room-box-title">
+            <a href="roomdetail.html"><h4>Green Elf</h4></a>
+            <h6>Deluxe Suit Quad </h6>
+            <i class="fas fa-share-alt share"></i>
+            </div>
+            <hr>
+            <a href="roomdetail.html"><img class="img-fluid melody" src="https://t41589.neocities.org/images/roomPicture/IMG_4273_%E7%BB%93%E6%9E%9C.jpg" alt="">
+            </a>
+         </div>
+         <div class="room-box col-lg-4 col-md-4">
+           <div class="room-box-title">
+            <a href="roomdetail.html"><h4>Others</h4></a>
+            <h6>Lobby, Kitchen, Outside</h6>
+            <i class="fas fa-share-alt share"></i>
+            </div>
+            <hr>
+             <a href="roomdetail.html"><img class="img-fluid melody" src="https://t41589.neocities.org/images/roomPicture/1224075793.jpg" alt="">
+            </a>
+         </div>
+    </div>
+
+
+    </div>
+  </section>
+
+   <footer class="container footer-section">
+    <div class="row">
+      <div class="footer-left col-md-6 col-lg-6 col-sm-6">
+        <h3>Jasmine Inn</h3>
+        <div class="phone-box">
+        <i class="fas fa-phone"></i>
+        <div class="phone-1">
+        <p>(+886)975-267-067</p>
+        </div>
+        <div class="mail-icon">
+          <i class="fas fa-envelope"></i>
+          <p>Jasmine100888@gmail.com</p>
+          </div>
+        </div>
+        <div class="phone-2">
+          <p>(+886)8-8856998</p>
+          </div>
+          <div class="address-box">
+          <i class="fas fa-map-marker-alt"></i>
+          <div class="address-text">
+            <p>No. 75-1, Heping Ln., Kending Rd.
+               Hengchun Township
+               Pingtung County
+               946, Taiwan (R.O.C.)
+             </p>
+            </div>
+          </div>
+      </div>
+
+      <div class="footer-right col-md-6 col-lg-6 col-sm-6">
+      <div class="connect-box">
+         <h3>Connect with us</h3>
+         <i class="fab fa-facebook facebook"></i>
+         <i class="fab fa-weixin wechat"></i>
+         <i class="fab fa-line line"></i>
+      </div>
+      <p class="hastag">#JasmineInn</p>
+      <div class="wifi-box">
+      <p><i class="fas fa-wifi fa-lg"></i> Free Wifi</p>
+      <div class="car-icon">
+        <p><i class="fas fa-car fa-lg"></i> Free Parking</p>
+        </div>
+
+      </div>
+      </div>
+    </div>
+</footer>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="index.js" charset="utf-8"></script>
+</body>
+
+</html>
